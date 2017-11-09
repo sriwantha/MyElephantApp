@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Products";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+ 
+<div>
+    <h2>All Products</h2>
+    <ul id="products" />
+</div>
+<div>
+    <h2>Search by ID</h2>
+    <input type="text" id="prodId" size="5" />
+    <input type="button" value="Search" onclick="find();" />
+    <p id="product" />
+</div>
+
+@*<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script>
+
+    </script>*@
+
+@section scripts{
+@Scripts.Render("~/bundles/jqueryval")
+@Scripts.Render("~/bundles/myscript")
+}
+
